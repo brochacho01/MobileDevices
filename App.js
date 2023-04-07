@@ -1,9 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, SafeAreaView } from 'react-native';
+import {useFonts} from 'expo-font';
 
 export default function App() {
+  const [loaded] = useFonts({
+    'outfit': require('./assets/fonts/Outfit.ttf'),
+    'outfitBold': require('./assets/fonts/Outfit-Bold.ttf'),    
+  });
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <View style={styles.mainBody}>
           <Image style={styles.qrCode} source={require('./assets/image-qr-code.png')} />
           <Text style={styles.baseText}>Improve your front-end skills by building projects</Text>
@@ -13,7 +18,7 @@ export default function App() {
       </View>
       
       <StatusBar style="auto" />
-    </View>
+    </SafeAreaView>
   );
 }
 
@@ -39,15 +44,15 @@ const styles = StyleSheet.create({
     width: 300,
     height: 300,
     borderRadius: 15,
-    marginTop: 10,
+    marginTop: 20,
     resizeMode: 'contain',
   },
   baseText: {
     color: 'hsl(218, 44%, 22%)',
-    fontWeight: 700,
     fontSize: 20,
     textAlign: 'center',
     marginTop: 20,
+    fontFamily: 'outfitBold',
   },
   paragraph: {
     color: 'hsl(220, 15%, 55%)',
@@ -55,5 +60,6 @@ const styles = StyleSheet.create({
     fontSize: 15,
     textAlign: 'center',
     marginTop: 10,
+    fontFamily: 'outfit',
   },
 });

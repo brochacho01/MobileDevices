@@ -1,11 +1,11 @@
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-f4981d0f882b2a3f0472912d15f9806d57e124e0fc890972558857b51b24a6f9.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=10706901)
 # Lab 1
 
-Your name: XXX (Please replace this)
+Your name: Lachlan Imel
 
 See [the expected design](./design/mobile-design.jpg) in the desig folder or below.
 
-![design](./design/mobile-design.jpg)
+![design](./design/finishedScreenshot.png)
 
 Please read more in [the style guide](./style-guide.md) about the sepcs of our design expectation. You can find [the Q-R code image](./assets/image-qr-code.png) in the assets folder.
 
