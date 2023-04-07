@@ -1,10 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <View style={styles.mainBody}>
+          <Image style={styles.qrCode} source={require('./assets/image-qr-code.png')} />
+          <Text style={styles.baseText}>Improve your front-end skills by building projects</Text>
+          <Text style={styles.paragraph}>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</Text>
+
+	<StatusBar style="auto" />
+      </View>
+      
       <StatusBar style="auto" />
     </View>
   );
@@ -13,8 +20,40 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'hsl(212, 45%, 89%)',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  mainBody: {
+    flex: 1,
+    backgroundColor: 'hsl(0, 0%, 100%)',
+    alignItems: 'center',
+    paddingHorizontal: 40,
+    marginBottom: 50,
+    marginTop: 60,
+    borderRadius: 25,
+    maxWidth: '90%',
+    height: 'auto',
+  },
+  qrCode: {
+    width: 300,
+    height: 300,
+    borderRadius: 15,
+    marginTop: 10,
+    resizeMode: 'contain',
+  },
+  baseText: {
+    color: 'hsl(218, 44%, 22%)',
+    fontWeight: 700,
+    fontSize: 20,
+    textAlign: 'center',
+    marginTop: 20,
+  },
+  paragraph: {
+    color: 'hsl(220, 15%, 55%)',
+    fontWeight: 400,
+    fontSize: 15,
+    textAlign: 'center',
+    marginTop: 10,
   },
 });
