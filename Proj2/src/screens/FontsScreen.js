@@ -74,11 +74,12 @@ const FontsScreen = () => {
 
     return (
         <View style={[styles.container, { backgroundColor: colors.background }]}>
-            <Text style={[styles.title, {color: colors.text, fontFamily: curFont.regular}]}>Select a Font</Text>
+            <Text testID='header-fonts' style={[styles.title, {color: colors.text, fontFamily: curFont.regular}]}>Select a Font</Text>
             <View style={styles.fontRow}>
                 <TouchableOpacity
                     style={[styles.circle, isFilled1 ? styles.filled : null]}
                     onPress={handlePress1}
+                    testID='fonts-button'
                 />
                 <Text style={[styles.rowText, {color: colors.text, fontFamily: Fonts['inconsolata'].regular}]}>Inconsolata</Text>
             </View>
@@ -86,6 +87,7 @@ const FontsScreen = () => {
                 <TouchableOpacity
                     style={[styles.circle, isFilled2 ? styles.filled : null]}
                     onPress={handlePress2}
+                    testID='fonts-button2'
                 />
                 <Text style={[styles.rowText, {color: colors.text, fontFamily: Fonts['lora'].regular}]}>Lora</Text>
             </View>

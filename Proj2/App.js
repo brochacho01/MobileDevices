@@ -39,7 +39,7 @@ const App = () => {
   }
 
   return (
-    <NavigationContainer>
+    <NavigationContainer testID='nav-bar'>
       <ThemeProvider>
         <FontProvider>
           <Tab.Navigator

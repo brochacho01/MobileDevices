@@ -39,20 +39,21 @@ const EmptyCircleButton = () => {
   };
 
   return (
-    <View style={[styles.container, { backgroundColor: colors.background }]}>
+    <View testID='header-circle' style={[styles.container, { backgroundColor: colors.background }]}>
       <View style={styles.buttonContainer}>
         <TouchableOpacity
           style={[styles.circle, isFilled1 ? styles.filled : null]}
           onPress={handlePress1}
         />
         <TouchableOpacity
+          testID='circle-button'
           style={[styles.circle, isFilled2 ? styles.filled : null]}
           onPress={handlePress2}
         />
       </View>
       <View style={styles.buttonText}>
         <Text style={[{fontFamily: curFont.regular}]}>Light Mode</Text>
-        <Text>Dark Mode</Text>
+        <Text style={[{fontFamily: curFont.regular}]}>Dark Mode</Text>
       </View>
     </View>
   );

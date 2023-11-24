@@ -216,7 +216,7 @@ const HomeScreen = () => {
           <View style={styles.header}>
             <View style={styles.headerLeft}>
               {/* Display WORD from dictionary if any... */}
-              {word ? <Text style={[styles.wordTitle, { color: colors.text, fontFamily: curFont.bold }]}>{wordTitle}</Text> : null}
+              {word ? <Text testID='word' style={[styles.wordTitle, { color: colors.text, fontFamily: curFont.bold }]}>{wordTitle}</Text> : null}
 
 
               {/* Display PHONETICS if any... */}
@@ -227,7 +227,7 @@ const HomeScreen = () => {
             <View style={styles.headerRight}>
 
               
-              {audio ?  <Pressable onPress={playSound} ><PlaySVG/></Pressable> : null}
+              {audio ?  <Pressable testID={'audio-button'} onPress={playSound}><PlaySVG/></Pressable> : null}
               
             </View>
 
@@ -242,8 +242,7 @@ const HomeScreen = () => {
           {speach1 ? <Text style={[styles.meaning, {color: colors.textLowContrast, fontFamily: curFont.regular}]}>Meaning</Text> : null}
 
           {/* Display first DEFINITION if any... */}
-          {definition ? <View style={styles.defLine}>
-            {/* <View style={styles.dot} /> */}
+          {definition ? <View style={styles.defLine} testID='definition'>
             <Text style={[styles.definition, { color: colors.text, fontFamily: curFont.regular }]}>{definition}</Text>
           </View> : null}
 

@@ -12,7 +12,7 @@ const SettingsScreen = () => {
     const { curFont } = useMyFonts();
 
     return (
-        <View style={[styles.container, {backgroundColor: colors.background}]}>
+        <View testID='header' style={[styles.container, {backgroundColor: colors.background}]}>
         <Text style={[styles.title, {fontFamily: curFont.bold}]}>Select Theme</Text>
         <EmptyCircleButton/>
         </View>

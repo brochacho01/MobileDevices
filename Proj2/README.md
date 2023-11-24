@@ -1,7 +1,7 @@
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-7f7980b617ed060a017424585567c406b6ee15c891e84e1186181d67ecf80aa0.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=11140015)
 # Project 2
 
-Your name(s): XXX (replace with your names, separated by commas if there are multiple people)
+Your name(s): Lachlan Imel, Evan Rodgers
 
 
 ## Code base
@@ -66,3 +66,14 @@ When you finish, please do the following:
 3. capture how your app looks locally in the simulated app on your machine
 4. put the captured image in the design folder
 5. edit this README file to display your captured image here in this README file (see the above displayed expected design as an example)
+
+
+![Importation](design/IPhone-HomeLight.png)
+![Importation](design/IPhone-HomeDark.png)
+![Importation](design/IPhone-SettingsScreen.png)
+![Importation](design/IPhone-FontsScreen.png)
+
+![Importation](design/Android-HomeLight.png)
+![Importation](design/Android-HomeDark.png)
+![Importation](design/Android-SettingsScreen.png)
+![Importation](design/Android-FontsScreen.png)
